@@ -64,7 +64,7 @@
 
 <div class="slideshow-container">
     <div class="slide active">
-        <img src="/IMG/dautien.png" alt="https://haycafe.vn/wp-content/uploads/2022/03/Background-sach-background-book-800x488.jpg">
+        <img src="/IMG/dautien.png" alt="đưa hết tiền đây">
     </div>
     <div class="slide">
         <img src="/IMG/SL2.jfif" alt="Image 2">
