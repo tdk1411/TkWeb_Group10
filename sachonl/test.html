@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức</title>
+    <link rel="stylesheet" href="/sachonlfinal/test.css">
+    <link rel="icon" href="/IMG/icon.png">
+</head>
+<body>
+    <header>
+        <a href="trangchu.html" class="logo">NHASACHMIENPHI.COM</a>
+    </header>
+    <nav>
+        <a href="trangchu.html">Trang Chủ</a>
+        <a href="">Thể loại</a>
+        <a href="Tintuc.html">Tin tức</a>
+        <a href="">Sản phẩm</a>
+        <a href="">Blog</a>
+        <a href="/gioithieu.html">Đăng xuất</a>
+        <form class="search-form">
+            <input type="text" class="form-control" placeholder="Tìm kiếm...">
+            <button type="submit" class="btn btn-primary">Tìm</button>
+        </form>
+    </nav>
+    <div class="container">
+        <aside class="sidebar-left">
+            <h2>Top đọc nhiều</h2>
+            <ol>
+                <li><a href="https://nhasachmienphi.com/doc-sach-dac-nhan-tam.html">Đắc Nhân Tâm</a></li>
+                <li><a href="https://nhasachmienphi.com/nha-gia-kim.html">Nhà Giả Kim</a></li>
+                <li><a href="https://nhasachmienphi.com/dam-bi-ghet.html">Dám Bị Ghét</a></li>
+            </ol>
+            <h2>Top yêu thích</h2>
+            <ol>
+                <li><a href="https://nhasachmienphi.com/toi-tu-hoc.html">Tôi Tự Học</a></li>
+                <li><a href="https://nhasachmienphi.com/ca-phe-cung-tony.html">Cà Phê Cùng Tony</a></li>
+            </ol>
+        </aside>
+
+        <main class="main-column">
+            <h2>Tin Tức Mới Nhất</h2>
+            <div class="news-article">
+                <a href="https://cuoi.tuoitre.vn/dc-ra-mat-bo-truyen-tranh-truc-tuyen-doc-la-ghien-xem-la-me-20241023154651799.html">
+                    <img src="/IMG/dc.jpg" alt="DC ra mắt bộ truyện tranh" />
+                </a>
+                <h3>DC ra mắt bộ truyện tranh trực tuyến 'đọc là ghiền, xem là mê'</h3>
+                <p>Nhà DC Comics lại chơi lớn, chiều lòng các 'thánh lướt' với bộ sưu tập truyện tranh trực tuyến.</p>
+                <p><strong>Ngày phát hành:</strong> 29/10/2024</p>
+            </div>
+            <!-- Thêm các bài viết khác tương tự -->
+        </main>
+
+        <aside class="sidebar-right">
+            <p>Hôm nay:</p>
+            <div id="current-time"></div>
+            <i>
+                <p>"Tôi càng đọc, tôi càng suy ngẫm."</p>
+                <p>-- Voltaire --</p>
+            </i>
+        </aside>
+    </div>
+
+    <footer>
+        <p>Phản hồi sách có nội dung xấu, xin gửi về: NhasachMienphi.com@gmail.com</p>
+        <p>Bản quyền © 2024</p>
+    </footer>
+
+    <script>
+        var curDate = new Date();
+        var curDay = curDate.getDate();
+        var curMonth = curDate.getMonth() + 1;
+        var curYear = curDate.getFullYear();
+        document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
+    </script>
+</body>
+</html>
