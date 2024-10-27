@@ -209,3 +209,27 @@ h1 {
         transform: scale(1.1);
     }
 }
+
+/* Banners quảng cáo bên trái và bên phải */
+.banner-left, .banner-right {
+    position: absolute;
+    top: 15%;
+}
+
+.banner-left {
+    left: 10px;
+}
+
+.banner-right {
+    right: 10px;
+}
+
+.banner-content {
+    font-size: 16px;
+}
+
+.banner-content img {
+    margin-top: 70px;
+    width: 250px;
+    height: 200px;
+}
