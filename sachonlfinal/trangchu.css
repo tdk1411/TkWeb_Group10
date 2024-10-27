@@ -194,3 +194,18 @@ h1 {
 .category img:hover {
     transform: scale(1.05); /* Phóng to nhẹ khi di chuột vào */
 }
+
+/* Hiệu ứng chuyển động cho thể loại Phổ biến hay đọc */
+.popular {
+    animation: pulse 2s infinite;
+}
+
+/* Keyframes cho hiệu ứng */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
