@@ -151,6 +151,21 @@ footer {
     padding: 1px 0;
     top: 100%;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .categories {
     display: flex;
     justify-content: center;
@@ -178,4 +193,43 @@ footer {
 
 .category img:hover {
     transform: scale(1.05); /* Phóng to nhẹ khi di chuột vào */
+}
+
+/* Hiệu ứng chuyển động cho thể loại Phổ biến hay đọc */
+.popular {
+    animation: pulse 2s infinite;
+}
+
+/* Keyframes cho hiệu ứng */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Banners quảng cáo bên trái và bên phải */
+.banner-left, .banner-right {
+    position: absolute;
+    top: 20%;
+}
+
+.banner-left {
+    left: 10px;
+}
+
+.banner-right {
+    right: 10px;
+}
+
+.banner-content {
+    font-size: 16px;
+}
+
+.banner-content img {
+    margin-top: 20px;
+    width: 250px;
+    height: 200px;
 }
