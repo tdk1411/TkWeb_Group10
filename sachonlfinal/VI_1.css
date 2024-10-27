@@ -1,47 +1,42 @@
-<style>
-    body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
 
-        h1 {
-            text-align: center;
-            margin-top: 20px;
-        }
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
 
-        .category {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-            flex-wrap: wrap; /* Đảm bảo ảnh tự động xuống dòng khi không đủ không gian */
-            max-width: 100%;
-            padding: 0 20px;
-        }
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Đảm bảo ảnh tự động xuống dòng khi không đủ không gian */
+    max-width: 100%;
+    padding: 0 200px;
+    margin-bottom: 30px;
+    padding-bottom: 55px;
+}
 
-        .category {
-            width: 200px;
-            text-align: center;
-        }
+.category {
+    width: 200px;
+    text-align: center;
+}
 
-        .category img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 8px;
-            transition: transform 0.3s ease; /* Tạo hiệu ứng khi hover */
-        }
+.category img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Tạo hiệu ứng khi hover */
+}
 
-        .category img:hover {
-            transform: scale(1.05); /* Phóng to nhẹ khi di chuột vào */
-        }
-
-        .category h3 {
-            margin-top: 10px;
-            font-size: 18px;
-        }
-</style>
+.category img:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi di chuột vào */
+}
