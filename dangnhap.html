@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" type="text/css" href="/gioithieu.css"> 
+    <link rel="icon" href="/IMG/icon.png">
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); // Ngăn không cho gửi biểu mẫu
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (!username || !password) {
+                alert('Hãy điền đủ thông tin!');
+            } else {
+                // Nếu cả hai trường đều được điền, gửi biểu mẫu
+                event.target.submit();
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div class="container">
+    <form action="trangchu.html" method="post" class="form-login" onsubmit="validateForm(event)">
+        <h2>Đăng Nhập</h2>
+        <div class="form-text">
+            <input type="text" id="username" placeholder=" " required>
+            <label>Tên đăng nhập</label> 
+        </div>
+        <div class="form-text">
+            <input type="password" id="password" placeholder=" " required>
+            <label>Mật khẩu</label> 
+        </div>
+        <span class="forgot-password" >Quên mật khẩu</span>
+        <button type="submit" style="font-size: large;">Đăng nhập</button> 
+        <br>
+        <span>Bạn chưa có tài khoản? <a href="/dangky.html">Đăng ký</a></span>
+    </form>
+</div>
+</body>
+</html>
