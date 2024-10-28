@@ -340,10 +340,10 @@
     <!-- rating by star -->
     <script>
       const stars = document.querySelectorAll(".star-rating .bi-star-fill");
-      stars.forEach((star, trangchu) => {
+      stars.forEach((star, index) => {
         star.addEventListener("click", () => {
           stars.forEach((s, i) => {
-            s.style.color = i <= trangchu ? "#FFD700" : "gray";
+            s.style.color = i <= index ? "#FFD700" : "gray";
           });
         });
       });
