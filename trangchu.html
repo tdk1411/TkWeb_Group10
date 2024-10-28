@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trang chủ</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="trangchu.css" />
     <link rel="icon" href="/IMG/icon.png" />
     <link
       rel="stylesheet"
@@ -27,14 +27,14 @@
           text-decoration: none;
           color: aliceblue;
         "
-        href="index.html"
+        href="trangchu.html"
       >
         <b>NHASACHMIENPHI.COM</b>
       </a>
     </header>
     <nav class="navbar navbar-expand-lg w-100 justify-content-end">
       <div class="div">
-        <a href="index.html">Trang Chủ</a>
+        <a href="trangchu.html">Trang Chủ</a>
         <!-- Gắn link trang chủ -->
         <a href="theloai.html">Thể loại</a>
         <!-- Gắn link thể loại -->
@@ -347,16 +347,16 @@
     var arr_hinh = ["IMG/SL1.png", "IMG/SL2.jpg", "IMG/SL3.png", "IMG/SL4.png"];
   </script>
   <script>
-    var index = 0;
+    var trangchu = 0;
     function prev() {
-      index--;
-      if (index < -0) index = arr_hinh.length - 1;
-      document.getElementById("hinh").src = arr_hinh[index];
+      trangchu--;
+      if (trangchu < -0) trangchu = arr_hinh.length - 1;
+      document.getElementById("hinh").src = arr_hinh[trangchu];
     }
     function next() {
-      index++;
-      if (index == arr_hinh.length) index = 0;
-      document.getElementById("hinh").src = arr_hinh[index];
+      trangchu++;
+      if (trangchu == arr_hinh.length) trangchu = 0;
+      document.getElementById("hinh").src = arr_hinh[trangchu];
     }
     setInterval("next()", 3000);
   </script>
