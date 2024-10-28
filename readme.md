@@ -1,4 +1,3 @@
-trangchu.html
 # HTML creator
 * File:     Tkweb
 * Author:   Trinh Ngoc Dang Khoa
