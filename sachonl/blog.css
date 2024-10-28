@@ -1,0 +1,10 @@
+.star-rating {
+  font-size: 2rem; /* Kích thước của sao */
+  color: #ffd700; /* Màu của sao */
+}
+.star-rating .bi-star-fill {
+  cursor: pointer;
+}
+.select_action {
+  width: 230px !important;
+}

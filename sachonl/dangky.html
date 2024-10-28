@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Đăng ký</title>
-    <link rel="stylesheet" type="text/css" href="/gioithieu.css"> 
-    <link rel="icon" href="/IMG/icon.png">
+    <link rel="stylesheet" type="text/css" href="gioithieu.css" />
+    <link rel="icon" href="/IMG/icon.png" />
     <script>
-        function validateForm(event) {
-            event.preventDefault(); // Ngăn chặn gửi form mặc định
-            
-            const accountName = document.getElementById("accountName").value;
-            const username = document.getElementById("username").value;
-            const password = document.getElementById("password").value;
-            const confirmPassword = document.getElementById("confirmPassword").value;
+      function validateForm(event) {
+        event.preventDefault(); // Ngăn chặn gửi form mặc định
 
-            // Kiểm tra các trường có trống không
-            if (!accountName || !username || !password || !confirmPassword) {
-                alert("Vui lòng điền đầy đủ thông tin!");
-                return false;
-            }
+        const accountName = document.getElementById("accountName").value;
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword =
+          document.getElementById("confirmPassword").value;
 
-            // Kiểm tra mật khẩu và mật khẩu nhập lại có khớp không
-            if (password !== confirmPassword) {
-                alert("Mật khẩu nhập lại không khớp!");
-                return false;
-            }
-
-            // Nếu tất cả hợp lệ, gửi form
-            document.querySelector(".form-login").submit();
+        // Kiểm tra các trường có trống không
+        if (!accountName || !username || !password || !confirmPassword) {
+          alert("Vui lòng điền đầy đủ thông tin!");
+          return false;
         }
+
+        // Kiểm tra mật khẩu và mật khẩu nhập lại có khớp không
+        if (password !== confirmPassword) {
+          alert("Mật khẩu nhập lại không khớp!");
+          return false;
+        }
+
+        // Nếu tất cả hợp lệ, gửi form
+        document.querySelector(".form-login").submit();
+      }
     </script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <form action="dangnhap.html" method="post" class="form-login" onsubmit="validateForm(event)">
-            <h2>Đăng Ký</h2>
-            <div class="form-text">
-                <label>Tên tài khoản</label> 
-                <input type="text" id="accountName">
-            </div>
-            <div class="form-text">
-                <label>Tên đăng nhập</label> 
-                <input type="text" id="username">
-            </div>
-            <div class="form-text">
-                <label>Mật khẩu</label> 
-                <input type="password" id="password">
-            </div>
-            <div class="form-text">
-                <label>Nhập lại mật khẩu</label> 
-                <input type="password" id="confirmPassword">
-            </div>
-            <button style="font-size: large;">Đăng ký</button> 
-            <br>
-            <span>Bạn đã có tài khoản? <a href="/dangnhap.html">Đăng nhập</a></span>
-        </form>
+      <form
+        action="dangnhap.html"
+        method="post"
+        class="form-login"
+        onsubmit="validateForm(event)"
+      >
+        <h2>Đăng Ký</h2>
+        <div class="form-text">
+          <label>Tên tài khoản</label>
+          <input type="text" id="accountName" />
+        </div>
+        <div class="form-text">
+          <label>Tên đăng nhập</label>
+          <input type="text" id="username" />
+        </div>
+        <div class="form-text">
+          <label>Mật khẩu</label>
+          <input type="password" id="password" />
+        </div>
+        <div class="form-text">
+          <label>Nhập lại mật khẩu</label>
+          <input type="password" id="confirmPassword" />
+        </div>
+        <button style="font-size: large">Đăng ký</button>
+        <br />
+        <span>Bạn đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a></span>
+      </form>
     </div>
 </body>
 </html>
