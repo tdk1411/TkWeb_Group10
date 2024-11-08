@@ -1,245 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trang chủ</title>
-  <link rel="stylesheet" href="trangchu.css" />
-  <link rel="icon" href="IMG/icon.png" />
-  <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-  />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-    crossorigin="anonymous"
-  />
-  <style>
-    /* Custom Styles */
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f4f7fb;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #007bff;
-      padding: 10px 0;
-      text-align: center;
-    }
-    header a {
-      color: white;
-      text-decoration: none;
-      font-size: 36px;
-      font-weight: bold;
-    }
-    nav {
-      background-color: #343a40;
-    }
-    nav .navbar-nav a {
-      color: white;
-      font-size: 18px;
-      padding: 12px 20px;
-    }
-    nav .navbar-nav a:hover {
-      background-color: #007bff;
-      border-radius: 5px;
-    }
-    .carousel-container {
-      position: relative;
-      margin: 30px auto;
-      max-width: 80%;
-    }
-    .carousel-container img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .carousel-container i {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 40px;
-      color: white;
-      cursor: pointer;
-      z-index: 1;
-    }
-    .carousel-container i.fa-chevron-circle-left {
-      left: 10px;
-    }
-    .carousel-container i.fa-chevron-circle-right {
-      right: 10px;
-    }
-    .section-title {
-      text-align: center;
-      color: #007bff;
-      font-size: 30px;
-      margin: 30px 0;
-    }
-    .book-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
-      gap: 20px;
-      padding: 0 20px;
-    }
-    .book-grid .book-item {
-      background-color: #e9f7fe;
-      border: 1px solid #007bff;
-      padding: 10px;
-      text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out;
-    }
-    .book-grid .book-item:hover {
-      transform: scale(1.05);
-    }
-    .book-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-    footer {
-      background-color: #343a40;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    footer a {
-      color: #007bff;
-      text-decoration: none;
-    }
-  </style>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="trangchu.css" />
+    <link rel="icon" href="IMG/icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-  <header>
-    <a href="trangchu.html">NHASACHMIENPHI.COM</a>
-  </header>
-
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="trangchu.html">Trang Chủ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="theloai.html">Thể loại</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Tintuc.html">Tin tức</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="sanpham.html">Sản phẩm</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="blog.html">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gioithieu.html">Đăng xuất</a>
-        </li>
-      </ul>
+  <body>
+    <header>
+      <a
+        style="font-size: 30px; overflow: auto; text-decoration: none; color: aliceblue;"
+        href="trangchu.html"
+        ><b>NHASACHMIENPHI.COM</b></a
+      >
+    </header>
+    <nav class="navbar navbar-expand-lg w-100 justify-content-end">
+      <div class="div">
+        <a href="trangchu.html">Trang Chủ</a>
+        <a href="theloai.html">Thể loại</a>
+        <a href="Tintuc.html">Tin tức</a>
+        <a href="sanpham.html">Sản phẩm</a>
+        <a href="blog.html">Blog</a>
+        <a href="gioithieu.html">Đăng xuất</a>
+      </div>
+      <div>
+        <form>
+          <div class="form-group d-flex">
+            <input
+              type="text"
+              style="border: #2881a7"
+              class="form-control my-1"
+              placeholder="Tìm kiếm..."
+            />
+            <button type="submit" class="mx-2 btn btn-primary my-1">Tìm</button>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <br />
+    <div id="slide">
+      <img src="IMG/SL1.png" id="hinh" />
+      <i class="fa fa-chevron-circle-left" onclick="prev()"></i>
+      <i class="fa fa-chevron-circle-right" onclick="next()"></i>
     </div>
-  </nav>
-
-  <!-- Carousel -->
-  <div class="carousel-container">
-    <img src="IMG/SL1.png" id="carousel-image" />
-    <i class="fa fa-chevron-circle-left" onclick="prev()"></i>
-    <i class="fa fa-chevron-circle-right" onclick="next()"></i>
-  </div>
-
-  <div class="container">
-    <p style="color: #007bff; font-size: 1.5rem; text-align: center;">
+    <br /><br />
+    <p style="color: #007bff; font-size: x-large; padding: 0px 20px">
       <i>Welcome home!</i>
     </p>
-    <hr />
-
-    <!-- Your Books Section -->
-    <div class="section-title">
-      <h1>SÁCH CỦA BẠN</h1>
-    </div>
-    <div class="book-grid">
-      <!-- Book 1 -->
-      <div class="book-item">
-        <a href="https://nhasachmienphi.com/doc-sach-dac-nhan-tam.html">
-          <img src="IMG/1.jpg" alt="Đắc Nhân Tâm" />
-        </a>
-        <p><b>Đắc Nhân Tâm</b></p>
+    <hr width="100%" size="2px" align="left" color="#007bff" />
+    
+    <!-- Sách Của Bạn -->
+    <div id="sachcuaban">
+      <br /><br />
+      <h1 style="text-align: center; color: #007bff">SÁCH CỦA BẠN</h1>
+      <br /><br /><br />
+      <style>
+        .grid-container {
+          display: flex;
+          overflow-x: auto;
+          gap: 20px;
+          padding: 10px;
+        }
+        .grid-item {
+          background-color: rgb(213, 233, 240);
+          border: 1px solid rgba(7, 54, 118, 0.8);
+          padding: 10px;
+          text-align: center;
+          min-width: 170px;
+          flex: 0 0 auto;
+        }
+        .grid-item img {
+          width: 170px;
+          height: 250px;
+          object-fit: cover;
+        }
+        .book-description {
+          font-size: 14px;
+          color: #333;
+          margin-top: 10px;
+        }
+      </style>
+      <div class="grid-container">
+        <div class="grid-item">
+          <a href="https://nhasachmienphi.com/doc-sach-dac-nhan-tam.html"
+            ><img
+              src="IMG/1.jpg"
+              alt="Đắc nhân tâm"
+              title="Đắc nhân tâm"
+          /></a>
+          <p><b>Đắc Nhân Tâm</b></p>
+          <p class="book-description">Tác giả: Dale Carnegie. Một cuốn sách về nghệ thuật giao tiếp và xây dựng mối quan hệ bền vững trong công việc và cuộc sống.</p>
+        </div>
+        <div class="grid-item">
+          <a href="https://nhasachmienphi.com/doi-ngan-dung-ngu-dai.html"
+            ><img
+              src="IMG/2.jpg"
+              alt="Đời Ngắn Đừng Ngủ Dài"
+              title="Đời Ngắn Đừng Ngủ Dài"
+          /></a>
+          <p><b>Đời Ngắn Đừng Ngủ Dài</b></p>
+          <p class="book-description">Tác giả: Robin Sharma. Cuốn sách này dạy bạn cách sống một cuộc đời đầy đam mê và không hối tiếc.</p>
+        </div>
+        <div class="grid-item">
+          <a href="https://nhasachmienphi.com/nguoi-nam-cham-bi-mat-cua-luat-hap-dan.html"
+            ><img
+              src="IMG/3.jpg"
+              alt="Người Nam Châm"
+              title="Người Nam Châm"
+          /></a>
+          <p><b>Người Nam Châm</b></p>
+          <p class="book-description">Tác giả: Tony Alessandra. Cuốn sách này sẽ giúp bạn cải thiện khả năng giao tiếp và xây dựng mối quan hệ hiệu quả.</p>
+        </div>
       </div>
-      <!-- Book 2 -->
-      <div class="book-item">
-        <a href="https://nhasachmienphi.com/doi-ngan-dung-ngu-dai.html">
-          <img src="IMG/2.jpg" alt="Đời Ngắn Đừng Ngủ Dài" />
-        </a>
-        <p><b>Đời Ngắn Đừng Ngủ Dài</b></p>
+    </div>
+    <br /><br />
+    <hr width="100%" size="2px" align="left" color="#007bff" />
+
+    <!-- Sách Nổi Bật -->
+    <div id="sachnoibat">
+      <h1 style="text-align: center; color: #007bff">SÁCH NỔI BẬT</h1>
+      <br /><br />
+      <div class="grid-container">
+        <div class="grid-item">
+          <a href="https://nhasachmienphi.com/nha-gia-kim.html"
+            ><img
+              src="IMG/10.jpg"
+              alt="Nhà Giả Kim"
+              title="Nhà Giả Kim"
+          /></a>
+          <p><b>Nhà Giả Kim</b></p>
+          <p class="book-description">Tác giả: Paulo Coelho. Cuốn sách là hành trình tìm kiếm ước mơ của một người chăn cừu trẻ và những bài học cuộc sống sâu sắc.</p>
+        </div>
+        <div class="grid-item">
+          <a href="https://nhasachmienphi.com/tu-huyet-cam-xuc.html"
+            ><img
+              src="IMG/11.jpg"
+              alt="Tử Huyệt Cảm Xúc"
+              title="Tử Huyệt Cảm Xúc"
+          /></a>
+          <p><b>Tử Huyệt Cảm Xúc</b></p>
+          <p class="book-description">Tác giả: Teri J. Weck. Cuốn sách này tiết lộ những "tử huyệt cảm xúc" của con người và cách thức để ảnh hưởng đến chúng.</p>
+        </div>
+        <div class="grid-item">
+          <a href="https://nhasachmienphi.com/dam-bi-ghet.html"
+            ><img
+              src="IMG/12.jpg"
+              alt="Dám Bị Ghét"
+              title="Dám Bị Ghét"
+          /></a>
+          <p><b>Dám Bị Ghét</b></p>
+          <p class="book-description">Tác giả: Ichiro Kishimi & Fumitake Koga. Cuốn sách khai thác triết lý sống dựa trên các nguyên lý của tâm lý học Adler.</p>
+        </div>
       </div>
-      <!-- Book 3 -->
-      <div class="book-item">
-        <a href="https://nhasachmienphi.com/nguoi-nam-cham-bi-mat-cua-luat-hap-dan.html">
-          <img src="IMG/3.jpg" alt="Người Nam Châm" />
-        </a>
-        <p><b>Người Nam Châm</b></p>
+    </div>
+
+    <br /><br />
+    <hr width="100%" size="2px" align="left" color="#007bff" />
+    
+    <!-- Khám Phá -->
+    <div id="khampha">
+      <h1 style="text-align: center; color: #007bff">KHÁM PHÁ</h1>
+      <br /><br />
+      <div class="grid-container">
+        <div class="grid-item">
+          <a href="https://nhasachmienphi.com/toi-tu-hoc.html"
+            ><img
+              src="IMG/4.jpg"
+              alt="Tôi Tự Học"
+              title="Tôi Tự Học"
+          /></a>
+          <p><b>Tôi Tự Học</b></p>
+          <p class="book-description">Tác giả: Nguyễn Hữu Tấn. Cuốn sách chia sẻ về con đường tự học và phát triển bản thân qua các câu chuyện thực tế.</p>
+        </div>
+        <div class="grid-item">
+          <a href="https://nhasachmienphi.com/diem-tin-trong-cuoc-song.html"
+            ><img
+              src="IMG/5.jpg"
+              alt="Điểm Tín Trong Cuộc Sống"
+              title="Điểm Tín Trong Cuộc Sống"
+          /></a>
+          <p><b>Điểm Tín Trong Cuộc Sống</b></p>
+          <p class="book-description">Tác giả: Michael J. Fox. Cuốn sách kể về hành trình đối diện với bệnh tật và sức mạnh tinh thần trong cuộc sống.</p>
+        </div>
+        <div class="grid-item">
+          <a href="https://nhasachmienphi.com/thien-chien-huynh.html"
+            ><img
+              src="IMG/6.jpg"
+              alt="Thiên Chiến Huynh"
+              title="Thiên Chiến Huynh"
+          /></a>
+          <p><b>Thiên Chiến Huynh</b></p>
+          <p class="book-description">Tác giả: Nguyễn Thị Tố Uyên. Cuốn sách về một người anh hùng và cuộc chiến vĩ đại với thế lực hắc ám.</p>
+        </div>
       </div>
     </div>
 
-    <hr />
+    <br /><br />
+    <footer>
+      <p>
+        Phản hồi sách có nội dung xấu, xin gửi về: NhasachMienphi.com@gmail.com
+      </p>
+      <p>Bản quyền © 2024</p>
+    </footer>
 
-    <!-- Featured Books Section -->
-    <div class="section-title">
-      <h1>SÁCH NỔI BẬT</h1>
-    </div>
-    <div class="book-grid">
-      <!-- Featured Books -->
-      <div class="book-item">
-        <a href="https://nhasachmienphi.com/nha-gia-kim.html">
-          <img src="IMG/10.jpg" alt="Nhà Giả Kim" />
-        </a>
-        <p><b>Nhà Giả Kim</b></p>
-      </div>
-      <!-- Additional books can go here -->
-    </div>
-
-    <hr />
-
-    <!-- Explore Section -->
-    <div class="section-title">
-      <h1>KHÁM PHÁ</h1>
-    </div>
-    <div class="book-grid">
-      <!-- Explore Books -->
-      <div class="book-item">
-        <a href="https://nhasachmienphi.com/toi-tu-hoc.html">
-          <img src="IMG/4.jpg" alt="Tôi Tự Học" />
-        </a>
-        <p><b>Tôi Tự Học</b></p>
-      </div>
-      <!-- Additional books can go here -->
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <p>Phản hồi sách có nội dung xấu, xin gửi về: <a href="mailto:NhasachMienphi.com@gmail.com">NhasachMienphi.com@gmail.com</a></p>
-    <p>Bản quyền © 2024</p>
-  </footer>
-
-  <!-- Scripts -->
-  <script>
-    var arr_hinh = ["IMG/SL1.png", "IMG/SL2.jpg", "IMG/SL3.png", "IMG/SL4.png"];
-    var trangchu = 0;
-    function prev() {
-      trangchu--;
-      if (trangchu < 0) trangchu = arr_hinh.length - 1;
-      document.getElementById("carousel-image").src = arr_hinh[trangchu];
-    }
-    function next() {
-      trangchu++;
-      if (trangchu == arr_hinh.length) trangchu = 0;
-      document.getElementById("carousel-image").src = arr_hinh[trangchu];
-    }
-    setInterval(next, 3000);
-  </script>
-</body>
+    <script>
+      var arr_hinh = ["IMG/SL1.png", "IMG/SL2.jpg", "IMG/SL3.png", "IMG/SL4.png"];
+      var trangchu = 0;
+      function prev() {
+        trangchu--;
+        if (trangchu < 0) trangchu = arr_hinh.length - 1;
+        document.getElementById("hinh").src = arr_hinh[trangchu];
+      }
+      function next() {
+        trangchu++;
+        if (trangchu == arr_hinh.length) trangchu = 0;
+        document.getElementById("hinh").src = arr_hinh[trangchu];
+      }
+      setInterval("next()", 3000);
+    </script>
+  </body>
 </html>
