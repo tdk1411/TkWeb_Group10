@@ -57,16 +57,42 @@
         margin-top: 10px;
       }
 
-      /* Mô tả sách ẩn */
-      .book-description {
-        display: none;
-        margin-top: 10px;
-        font-size: 14px;
-        color: #333;
+      /* Modal (Overlay) */
+      .modal {
+        display: none; /* Ẩn modal mặc định */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding-top: 60px;
       }
 
-      .book-item-active .book-description {
-        display: block;
+      .modal-content {
+        background-color: white;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 8px;
+      }
+
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
       }
 
       /* Media Query cho các màn hình nhỏ */
@@ -136,37 +162,19 @@
       <h1 style="text-align: center; color: #007bff">SÁCH CỦA BẠN</h1>
       <br /><br /><br />
       <div class="grid-container">
-        <div class="grid-item" onclick="toggleDescription(this)">
-          <a href="https://nhasachmienphi.com/doc-sach-dac-nhan-tam.html"
-            ><img
-              src="IMG/1.jpg"
-              alt="Đắc nhân tâm"
-              title="Đắc nhân tâm"
-          /></a>
+        <div class="grid-item" onclick="openModal('Đắc Nhân Tâm', 'https://nhasachmienphi.com/doc-sach-dac-nhan-tam.html')">
+          <a href="javascript:void(0)"><img src="IMG/1.jpg" alt="Đắc Nhân Tâm" title="Đắc Nhân Tâm" /></a>
           <p class="book-title">Đắc Nhân Tâm</p>
-          <p class="book-description">Tác giả: Dale Carnegie. Một cuốn sách về nghệ thuật giao tiếp và xây dựng mối quan hệ bền vững trong công việc và cuộc sống.</p>
         </div>
 
-        <div class="grid-item" onclick="toggleDescription(this)">
-          <a href="https://nhasachmienphi.com/doi-ngan-dung-ngu-dai.html"
-            ><img
-              src="IMG/2.jpg"
-              alt="Đời Ngắn Đừng Ngủ Dài"
-              title="Đời Ngắn Đừng Ngủ Dài"
-          /></a>
+        <div class="grid-item" onclick="openModal('Đời Ngắn Đừng Ngủ Dài', 'https://nhasachmienphi.com/doi-ngan-dung-ngu-dai.html')">
+          <a href="javascript:void(0)"><img src="IMG/2.jpg" alt="Đời Ngắn Đừng Ngủ Dài" title="Đời Ngắn Đừng Ngủ Dài" /></a>
           <p class="book-title">Đời Ngắn Đừng Ngủ Dài</p>
-          <p class="book-description">Tác giả: Robin Sharma. Cuốn sách này dạy bạn cách sống một cuộc đời đầy đam mê và không hối tiếc.</p>
         </div>
 
-        <div class="grid-item" onclick="toggleDescription(this)">
-          <a href="https://nhasachmienphi.com/nguoi-nam-cham-bi-mat-cua-luat-hap-dan.html"
-            ><img
-              src="IMG/3.jpg"
-              alt="Người Nam Châm"
-              title="Người Nam Châm"
-          /></a>
+        <div class="grid-item" onclick="openModal('Người Nam Châm', 'https://nhasachmienphi.com/nguoi-nam-cham-bi-mat-cua-luat-hap-dan.html')">
+          <a href="javascript:void(0)"><img src="IMG/3.jpg" alt="Người Nam Châm" title="Người Nam Châm" /></a>
           <p class="book-title">Người Nam Châm</p>
-          <p class="book-description">Tác giả: Tony Alessandra. Cuốn sách này sẽ giúp bạn cải thiện khả năng giao tiếp và xây dựng mối quan hệ hiệu quả.</p>
         </div>
       </div>
     </div>
@@ -174,43 +182,13 @@
     <br /><br />
     <hr width="100%" size="2px" align="left" color="#007bff" />
 
-    <!-- Sách Nổi Bật -->
-    <div id="sachnoibat">
-      <h1 style="text-align: center; color: #007bff">SÁCH NỔI BẬT</h1>
-      <br /><br />
-      <div class="grid-container">
-        <div class="grid-item" onclick="toggleDescription(this)">
-          <a href="https://nhasachmienphi.com/nha-gia-kim.html"
-            ><img
-              src="IMG/10.jpg"
-              alt="Nhà Giả Kim"
-              title="Nhà Giả Kim"
-          /></a>
-          <p class="book-title">Nhà Giả Kim</p>
-          <p class="book-description">Tác giả: Paulo Coelho. Cuốn sách là hành trình tìm kiếm ước mơ của một người chăn cừu trẻ và những bài học cuộc sống sâu sắc.</p>
-        </div>
-
-        <div class="grid-item" onclick="toggleDescription(this)">
-          <a href="https://nhasachmienphi.com/diem-tin-trong-cuoc-song.html"
-            ><img
-              src="IMG/5.jpg"
-              alt="Điểm Tín Trong Cuộc Sống"
-              title="Điểm Tín Trong Cuộc Sống"
-          /></a>
-          <p class="book-title">Điểm Tín Trong Cuộc Sống</p>
-          <p class="book-description">Tác giả: Michael J. Fox. Cuốn sách kể về hành trình đối diện với bệnh tật và sức mạnh tinh thần trong cuộc sống.</p>
-        </div>
-
-        <div class="grid-item" onclick="toggleDescription(this)">
-          <a href="https://nhasachmienphi.com/thien-chien-huynh.html"
-            ><img
-              src="IMG/6.jpg"
-              alt="Thiên Chiến Huynh"
-              title="Thiên Chiến Huynh"
-          /></a>
-          <p class="book-title">Thiên Chiến Huynh</p>
-          <p class="book-description">Tác giả: Nguyễn Thị Tố Uyên. Cuốn sách về một người anh hùng và cuộc chiến vĩ đại với thế lực hắc ám.</p>
-        </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="bookTitle">Thông tin sách</h2>
+        <p id="bookDescription">Mô tả sách sẽ hiển thị ở đây...</p>
+        <a id="readBookLink" href="#" target="_blank" class="btn btn-primary">Đọc Sách</a>
       </div>
     </div>
 
@@ -223,22 +201,38 @@
     <script>
       var arr_hinh = ["IMG/SL1.png", "IMG/SL2.jpg", "IMG/SL3.png", "IMG/SL4.png"];
       var trangchu = 0;
+
       function prev() {
         trangchu--;
         if (trangchu < 0) trangchu = arr_hinh.length - 1;
         document.getElementById("hinh").src = arr_hinh[trangchu];
       }
+
       function next() {
         trangchu++;
         if (trangchu == arr_hinh.length) trangchu = 0;
         document.getElementById("hinh").src = arr_hinh[trangchu];
       }
-      setInterval("next()", 3000);
 
-      // Hàm hiển thị/ẩn mô tả sách khi nhấn vào sách
-      function toggleDescription(element) {
-        element.classList.toggle("book-item-active");
+      // Mở modal
+      function openModal(title, link) {
+        document.getElementById('bookTitle').innerText = title;
+        document.getElementById('bookDescription').innerText = "Đây là mô tả chi tiết về sách.";
+        document.getElementById('readBookLink').href = link;
+        document.getElementById('myModal').style.display = "block";
       }
+
+      // Đóng modal
+      function closeModal() {
+        document.getElementById('myModal').style.display = "none";
+      }
+
+      // Khi người dùng nhấn ra ngoài modal, đóng modal
+      window.onclick = function (event) {
+        if (event.target == document.getElementById('myModal')) {
+          closeModal();
+        }
+      };
     </script>
   </body>
 </html>
